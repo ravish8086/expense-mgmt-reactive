@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: expense-mgmt-reactive
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/expense-manager
+      database: expense-manager
+server:
+  port: 8080

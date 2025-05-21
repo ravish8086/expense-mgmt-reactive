@@ -1,0 +1,47 @@
+### 🟢 Get all expenses
+GET http://localhost:8080/api/v1/expenses
+Accept: application/json
+
+###
+
+### 🟢 Add a new expense
+POST http://localhost:8080/api/v1/expenses
+Content-Type: application/json
+
+{
+  "id": "682d45f67ebb8952bb50cee4",
+  "name": "Groceries",
+  "category": "Food",
+  "amount": 120.75,
+  "date": "2025-05-20"
+}
+
+###
+
+### 🟢 Get all expenses
+GET http://localhost:8080/api/v1/expenses
+Accept: application/json
+
+###
+
+### 🟢 Get expense by ID
+GET http://localhost:8080/api/v1/expenses/682d45f67ebb8952bb50cee4
+Accept: application/json
+
+###
+
+### 🟡 Update an existing expense
+PUT http://localhost:8080/api/v1/expenses/682d45f67ebb8952bb50cee4
+Content-Type: application/json
+
+{
+  "name": "Updated Groceries",
+  "category": "Essentials",
+  "amount": 100.00,
+  "date": "2025-05-21"
+}
+
+###
+
+### 🔴 Delete an expense
+DELETE http://localhost:8080/api/v1/expenses/682d45f67ebb8952bb50cee4
